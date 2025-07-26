@@ -112,3 +112,137 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Enhanced Visual Effects and Animations */
+@layer utilities {
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Enhanced gradient backgrounds */
+  .bg-gradient-ceramic {
+    background: linear-gradient(135deg, 
+      hsl(var(--ceramic-warm)) 0%, 
+      hsl(var(--ceramic-terracotta)) 50%, 
+      hsl(var(--ceramic-earth)) 100%);
+  }
+
+  .bg-gradient-soft {
+    background: linear-gradient(180deg, 
+      hsl(var(--background)) 0%, 
+      hsl(var(--ceramic-clay) / 0.3) 100%);
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(1deg); }
+    66% { transform: translateY(5px) rotate(-1deg); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Pulse glow effect */
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--ceramic-warm) / 0.3); }
+    50% { box-shadow: 0 0 40px hsl(var(--ceramic-warm) / 0.6); }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  /* Sophisticated hover effects */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-warm);
+  }
+
+  /* Text shimmer effect */
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  .text-shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--ceramic-earth)),
+      hsl(var(--ceramic-warm)),
+      hsl(var(--ceramic-terracotta)),
+      hsl(var(--ceramic-earth))
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+  }
+
+  /* Smooth reveal animations */
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes reveal-scale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-reveal-up {
+    animation: reveal-up 0.6s ease-out forwards;
+  }
+
+  .animate-reveal-scale {
+    animation: reveal-scale 0.5s ease-out forwards;
+  }
+
+  /* Enhanced shadows */
+  .shadow-ceramic {
+    box-shadow: var(--shadow-warm);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* Glass morphism effect */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Improved focus states */
+  .focus-ceramic:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px hsl(var(--ceramic-warm) / 0.3);
+  }
+
+  /* Stagger animation delays */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+}

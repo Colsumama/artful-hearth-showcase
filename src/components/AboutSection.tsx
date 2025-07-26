@@ -2,35 +2,42 @@ import { Users, Award, Palette, Heart } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="sobre-nosotros" className="py-20 bg-muted/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="sobre-nosotros" className="py-20 flex justify-center items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Contenido de texto */}
-          <div className="animate-fade-in">
+          <div className="animate-fade-in bg-white/60 backdrop-blur-lg border border-white/30 rounded-2xl shadow-lg p-8">
             <h2 className="text-3xl md:text-4xl font-bold font-playfair text-foreground mb-6">
-              Sobre <span className="text-ceramic-earth">Ceramicados</span>
+              Sobre <span className="font-extrabold bg-gradient-to-r from-ceramic-earth via-ceramic-warm to-ceramic-terracotta bg-clip-text text-transparent animate-text-shimmer">CerámicaDOS</span>
             </h2>
             <div className="space-y-6 font-inter text-muted-foreground">
+              <div className="bg-ceramic-warm/10 p-4 rounded-lg border-l-4 border-ceramic-earth mb-6">
+                <p className="text-sm font-semibold text-ceramic-earth uppercase tracking-wide">
+                  💡 PREVIEW DEL SITIO WEB
+                </p>
+                <p className="text-sm text-muted-foreground mt-1">
+                  Este contenido es adaptable según las necesidades reales del taller
+                </p>
+              </div>
               <p className="text-lg leading-relaxed">
-                Somos una familia de artesanos ceramistas con más de 15 años de experiencia 
-                creando piezas únicas que combinan técnicas tradicionales con diseños contemporáneos.
+                CerámicaDos es un taller artesanal especializado en la creación de piezas 
+                únicas de cerámica. Cada pieza refleja años de experiencia y pasión por 
+                este arte milenario.
               </p>
               <p className="text-lg leading-relaxed">
-                En nuestro taller de Buenos Aires, cada pieza nace de la pasión por el arte 
-                cerámico y el compromiso con la calidad. Utilizamos arcillas selectas y 
-                esmaltes naturales para crear cerámicas que no solo son hermosas, 
-                sino también duraderas y funcionales.
+                Nuestro enfoque combina técnicas tradicionales con diseños contemporáneos, 
+                creando cerámicas que no solo son hermosas, sino también funcionales y 
+                duraderas para el uso diario.
               </p>
               <p className="text-lg leading-relaxed">
-                Creemos que cada hogar merece piezas especiales que reflejen la personalidad 
-                de quienes las habitan. Por eso, cada cerámica que creamos lleva consigo 
-                nuestra dedicación y amor por este arte milenario.
+                Trabajamos con arcillas selectas y esmaltes de alta calidad para garantizar 
+                que cada pieza sea especial y refleje la dedicación que ponemos en nuestro trabajo.
               </p>
             </div>
           </div>
 
           {/* Estadísticas y características */}
-          <div className="grid grid-cols-2 gap-6 animate-fade-in-up">
+          <div className="grid grid-cols-2 gap-6 animate-fade-in-up bg-white/60 backdrop-blur-lg border border-white/30 rounded-2xl shadow-lg p-8">
             <div className="text-center p-6 bg-card rounded-lg hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-ceramic-warm/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-ceramic-earth" />
