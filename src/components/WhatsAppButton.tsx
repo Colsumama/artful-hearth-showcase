@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 
 const WhatsAppButton = () => {
   const handleClick = () => {
-    const message = "Hola! Me interesa conocer más sobre sus cerámicas artesanales.";
+    const message = "Hola! Me interesa conocer más sobre Ceramicados y sus piezas artesanales. ¿Podrían brindarme más información?";
     const whatsappUrl = `https://wa.me/5491123456789?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
