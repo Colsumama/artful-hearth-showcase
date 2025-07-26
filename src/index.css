@@ -2,39 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Ceramic artisan design system - warm earth tones and natural colors */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 42 20% 97%;
+    --foreground: 28 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 15% 99%;
+    --card-foreground: 28 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 15% 99%;
+    --popover-foreground: 28 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 35% 45%;
+    --primary-foreground: 42 20% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 25% 88%;
+    --secondary-foreground: 28 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 15% 94%;
+    --muted-foreground: 28 15% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 30 40% 75%;
+    --accent-foreground: 28 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 42 20% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 25 35% 45%;
+
+    --ceramic-warm: 20 45% 65%;
+    --ceramic-terracotta: 15 55% 55%;
+    --ceramic-clay: 35 30% 80%;
+    --ceramic-earth: 25 35% 45%;
+
+    --gradient-ceramic: linear-gradient(135deg, hsl(var(--ceramic-warm)), hsl(var(--ceramic-terracotta)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--ceramic-clay)));
+    
+    --shadow-warm: 0 10px 30px -10px hsl(var(--ceramic-earth) / 0.2);
+    --shadow-soft: 0 4px 20px -8px hsl(var(--ceramic-earth) / 0.15);
 
     --radius: 0.5rem;
 

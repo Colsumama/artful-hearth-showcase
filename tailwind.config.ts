@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				ceramic: {
+					warm: 'hsl(var(--ceramic-warm))',
+					terracotta: 'hsl(var(--ceramic-terracotta))',
+					clay: 'hsl(var(--ceramic-clay))',
+					earth: 'hsl(var(--ceramic-earth))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
